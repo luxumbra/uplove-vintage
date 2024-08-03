@@ -23,7 +23,7 @@ const imageAssets = await Promise.all(images.map(async (image) => {
     imageAssets.map((imageAsset, index) => (
       imageAsset ? (
         <div key={index} class="image-container" id="gallery">
-          <a href={imageAsset.src} class="image-link glightbox">
+          <a href={imageAsset.src} class="image-link glightbox w-screen h-auto">
             <img
               src={imageAsset.src}
               alt={imageAsset.attributes.alt}

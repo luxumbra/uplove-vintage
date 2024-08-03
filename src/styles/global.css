@@ -12,7 +12,9 @@ html.dark {
   background-color: rgb(34, 33, 37);
   color: #fff;
 }
-
+body {
+  @apply max-h-screen max-w-full overflow-hidden;
+}
 .dark .nav-links a {
   color: #fff;
 }

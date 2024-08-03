@@ -2,7 +2,10 @@
 import Hamburger from "./Hamburger.astro";
 import Navigation from "./Navigation.astro";
 import ThemeIcon from "./ThemeIcon.astro";
-import { getImage } from "astro:assets";
+import { getImage, Image } from "astro:assets";
+
+import logoImg from '../images/logo.png';
+
 const { is404Page = false } = Astro.props; // Get the prop from Astro.props
 
 const favicon_avif = await getImage({
@@ -16,7 +19,7 @@ const favicon_avif = await getImage({
 });
 ---
 
-<header class="mb-[30px]">
+<header class="mb-[30px] z-20">
   <nav
     class="flex items-center justify-between w-full h-full relative align-center"
   >
@@ -25,11 +28,11 @@ const favicon_avif = await getImage({
         <div>
           <a href="/">
             <img
-              class="favicon absolute left-0 dark:invert -mt-[15px]"
-              src={favicon_avif.src}
+              class="favicon absolute left-0 -mt-[15px]"
+              src={logoImg.src}
               alt="Home"
-              width="30px"
-              height="30px"
+              width="88"
+              height="88"
             />
           </a>
         </div>

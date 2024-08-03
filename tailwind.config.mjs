@@ -5,7 +5,10 @@ export default {
 		extend: {
 			fontFamily: {
 				'overpass-mono': ['"Overpass Mono Variable"', "sans-serif"],
-				'inconsolata': ['"Inconsolata Variable"', "sans-serif"]
+				'inconsolata': ['"Inconsolata Variable"', "sans-serif"],
+				'birthstone-bounce': ['"Birthstone Bounce"', "cursive"],
+				'baloo-2': ['"Baloo 2 Variable"', "system-ui"],
+				'bona-nova': ['"Bona Nova"', "serif"]
 			},
 			objectPosition: {
 				'top-33': 'center top 33.33%',
@@ -16,6 +19,9 @@ export default {
 			},
 			backgroundSize: {
 				'size-66': '100% 66.67%'
+			},
+			boxShadow: {
+				vignette: '0 0 300px 300px rgba(0 0 0 / 0.6) inset',
 			},
 			typography: {
 				'no-quotes': {
