@@ -1,12 +1,15 @@
 ---
+import Icon from "astro-icon";
 import Pagefind from "./Pagefind.astro";
 ---
 
 <div id="nav-links" class="nav-links collapsed font-overpass-mono capitalize" >
-  <a class="fade-effect" href="/">Home</a>
-  <a class="fade-effect" href="" >Contact</a>
-  <a class="fade-effect" href="">Etsy</a>
-  <a class="fade-effect" href="">Instagram</a>
+  <a class="fade-effect" href="/"><Icon name="mdi:home" class="w-6 h-6"/> Home</a>
+  <a class="fade-effect" href="" ><Icon name="mdi:email" class="w-6 h-6"/> Contact</a>
+  <a class="fade-effect" href=""><Icon name="mdi:etsy" class="w-6 h-6"/> Etsy</a>
+  <a class="fade-effect" href=""><Icon name="mdi:instagram" class="w-6 h-6"/> Instagram</a>
+  <a class="fade-effect" href=""><Icon name="mdi:facebook" class="w-6 h-6"/> Facebook</a>
+  <a class="fade-effect" href=""><Icon name="mdi:pinterest" class="w-6 h-6"/> Pinterest</a>
   <!-- <a href="/tags/">Tags</a> -->
   <Pagefind class="fade-effect" />
   <slot />
@@ -42,7 +45,9 @@ import Pagefind from "./Pagefind.astro";
   }
 
   .nav-links a {
-    display: block;
+    display: flex;
+    align-items: center;
+    gap: 4px;
     line-height: 50px;
     padding-left: 30px;
     box-sizing: border-box;

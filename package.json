@@ -37,6 +37,9 @@
     "typescript": "^5.5.3"
   },
   "devDependencies": {
+    "@iconify-json/game-icons": "^1.1.10",
+    "@iconify-json/mdi": "^1.1.68",
+    "@iconify/tailwind": "^1.1.2",
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "@tailwindcss/typography": "^0.5.13",
     "pagefind": "^1.1.0"

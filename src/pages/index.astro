@@ -53,7 +53,29 @@ for (let collection of collections) {
       width="1920"
       height="1080"
     >
-      <div class="page-content z-30 text-center flex flex-col items-center justify-between gap-8 relative mix-blend-overlay flex-shrink-0">
+
+      <section class="flex flex-col items-center justify-between gap-16 z-30">
+        <div class="about text-center w-full prose-lg">
+          <p class="text-2xl leading-relaxed">
+            Welcome to Uplove Vintage, your go-to destination for sustainable
+            fashion and decor. We bring timeless treasures back to life with our
+            curated collection of vintage items.
+          </p>
+
+          <p>
+            Whether you're looking for unique home decor or stylish wardrobe
+            additions, our vintage pieces combine the charm of the past with
+            modern flair. Each item at Uplove Vintage is carefully selected and
+            revitalised, ensuring you find something truly special. </p>
+
+            <p class="text-lg">Discover the
+            joy of sustainable shopping with Uplove Vintage, where every piece
+            tells a story.
+          </p>
+        </div>
+        <NewsletterSignup />
+      </section>
+      <div class="page-content z-30 text-center flex flex-col items-center justify-between gap-8 relative mix-blend-overlay flex-shrink-0 w-1/2">
         <p class="font-bona-nova font-bold text-5xl mb-8 mix-blend-overlay text-white">
           Recycle. Upcycle. Relove. Uplove.
         </p>
@@ -67,16 +89,6 @@ for (let collection of collections) {
           Coming soon!!
         </p>
       </div>
-      <section class="flex flex-col items-center justify-between gap-16 z-30">
-        <div class="about text-center w-3/4 text-xl prose-xl">
-          <p>Welcome to Uplove Vintage, your go-to destination for sustainable fashion and decor. We bring timeless treasures back to life with our curated collection of vintage items.</p>
-
-<p class="text-lg">Whether you're looking for unique home decor or stylish wardrobe additions, our vintage pieces combine the charm of the past with modern flair. Each item at Uplove Vintage is carefully selected and revitalised, ensuring you find something truly special. Discover the joy of sustainable shopping with Uplove Vintage, where every piece tells a story.</p>
-        </div>
-        <NewsletterSignup />
-
-      </section>
-
     </Homepage>
   ) : (
     <p>No images found!</p>

@@ -40,4 +40,10 @@ h1 {
   .large-heart {
     @apply border-2;
   }
+
+  .nav-links {
+    a {
+      @apply inline-flex items-center border-2;
+    }
+  }
 }

@@ -79,6 +79,15 @@ dependencies:
     version: 5.5.3
 
 devDependencies:
+  '@iconify-json/game-icons':
+    specifier: ^1.1.10
+    version: 1.1.10
+  '@iconify-json/mdi':
+    specifier: ^1.1.68
+    version: 1.1.68
+  '@iconify/tailwind':
+    specifier: ^1.1.2
+    version: 1.1.2
   '@tailwindcss/aspect-ratio':
     specifier: ^0.4.2
     version: 0.4.2(tailwindcss@3.4.6)
@@ -802,6 +811,28 @@ packages:
   /@fontsource/bona-nova@5.0.13:
     resolution: {integrity: sha512-5N+8Dex8+Iq4DSs6NP2P7ZFLIh4Qjlv1p+vBWr8ShZD4RVvSuZFKsV7fHy8+AorIZaCuKiZQvPQbRMaNxvu6oQ==}
     dev: false
+
+  /@iconify-json/game-icons@1.1.10:
+    resolution: {integrity: sha512-QUM6rnU52hrw4sOJ6dKmFbF1aJVOSO9TrqEsdoE8OjvtMr1iTBoP6fi+thGsGVcKA+otzEmx1Hm8IktxPnya8A==}
+    dependencies:
+      '@iconify/types': 2.0.0
+    dev: true
+
+  /@iconify-json/mdi@1.1.68:
+    resolution: {integrity: sha512-7//TKCiXLU6kNWeOJRTBbisofVO7rF1sD1TZTL4/V9nqlmVNczQ5IOY0GgKOTsitkcTnX9GXgrgbjw3OI5B69w==}
+    dependencies:
+      '@iconify/types': 2.0.0
+    dev: true
+
+  /@iconify/tailwind@1.1.2:
+    resolution: {integrity: sha512-ZgToKxxd7zF5T9NXPnY9APRF06ZjFF21H/bINzcbKTdeJzLrNLIoVaoePIUbWVQ2HAac5cAYEHPZO8ILSUe3bQ==}
+    dependencies:
+      '@iconify/types': 2.0.0
+    dev: true
+
+  /@iconify/types@2.0.0:
+    resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
+    dev: true
 
   /@img/sharp-darwin-arm64@0.33.4:
     resolution: {integrity: sha512-p0suNqXufJs9t3RqLBO6vvrgr5OhgbWp76s5gTRvdmxmuv9E1rcaqGUsl3l4mKVmXPkTkTErXediAui4x+8PSA==}

@@ -1,11 +1,11 @@
 ---
-
+import Icon from "astro-icon";
 ---
 
 <link href="/pagefind/pagefind-ui.css" rel="stylesheet" />
 <script src="/pagefind/pagefind-ui.js" is:inline></script>
 
-<button id="searchButton" class="text-lg pl-[30px] h-[50px]">Search</button>
+<button id="searchButton" class="text-lg pl-[30px] h-[50px] flex items-center gap-1"><Icon name="mdi:search" class="w-6 h-6"/> Search</button>
 
 <div id="myModal" class="modal">
   <div
