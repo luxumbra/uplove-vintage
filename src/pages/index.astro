@@ -1,11 +1,11 @@
 ---
 import Homepage from "../components/Homepage.astro";
+import NewsletterSignup from "../components/NewsletterSignup.astro";
 const { pageTitle } = Astro.props;
 import { getCollection } from "astro:content";
-const collections = ["jewellery"];
+const collections = ["jewelry"];
 import { getImage, Image } from "astro:assets"; // Add all your collections here
-import logoImg from '../images/logo.svg';
-
+import logoImg from "../images/logo-white.svg";
 
 let allImages = [];
 let allAlts = [];
@@ -45,7 +45,6 @@ for (let collection of collections) {
 
 {
   allImages.length > 0 ? (
-
     <Homepage
       title={pageTitle}
       images={JSON.stringify(allImages)}
@@ -54,13 +53,32 @@ for (let collection of collections) {
       width="1920"
       height="1080"
     >
-      <div class="page-content z-30 text-center flex flex-col items-center justify-between gap-8 relative">
-        <p class="font-bona-nova font-bold text-5xl bg-blend-overlay">Recycle. Upcycle. Relove. Uplove.</p>
-        <Image src={logoImg} width={400} height={400} alt="Logo" class="bg-blend-overlay grayscale invert opacity-60" />
-        <p class="font-birthstone-bounce text-[12rem] -rotate-12 bg-blend-overlay text-white">Coming soon!!</p>
+      <div class="page-content z-30 text-center flex flex-col items-center justify-between gap-8 relative mix-blend-overlay flex-shrink-0">
+        <p class="font-bona-nova font-bold text-5xl mb-8 mix-blend-overlay text-white">
+          Recycle. Upcycle. Relove. Uplove.
+        </p>
+        <Image
+          src={logoImg}
+          width={600}
+          alt="Logo"
+          class="h-auto mix-blend-overlay"
+        />
+        <p class="font-birthstone-bounce text-[8rem] -rotate-12 mix-blend-overlay -mt-8 text-white">
+          Coming soon!!
+        </p>
       </div>
+      <section class="flex flex-col items-center justify-between gap-16 z-30">
+        <div class="about text-center w-3/4 text-xl prose-xl">
+          <p>Welcome to Uplove Vintage, your go-to destination for sustainable fashion and decor. We bring timeless treasures back to life with our curated collection of vintage items.</p>
+
+<p class="text-lg">Whether you're looking for unique home decor or stylish wardrobe additions, our vintage pieces combine the charm of the past with modern flair. Each item at Uplove Vintage is carefully selected and revitalised, ensuring you find something truly special. Discover the joy of sustainable shopping with Uplove Vintage, where every piece tells a story.</p>
+        </div>
+        <NewsletterSignup />
+
+      </section>
+
     </Homepage>
   ) : (
-    <p>No images found</p>
+    <p>No images found!</p>
   )
 }

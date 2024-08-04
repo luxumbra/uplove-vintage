@@ -12,9 +12,7 @@ html.dark {
   background-color: rgb(34, 33, 37);
   color: #fff;
 }
-body {
-  @apply max-h-screen max-w-full overflow-hidden;
-}
+
 .dark .nav-links a {
   color: #fff;
 }
@@ -36,4 +34,10 @@ body {
 h1 {
   margin: 1rem 0;
   font-size: 2.5rem;
+}
+
+@layer components {
+  .large-heart {
+    @apply border-2;
+  }
 }

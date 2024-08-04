@@ -76,11 +76,14 @@ const { image, description, author, pubDate, updatedDate, title, site_name, alt,
     <ViewTransitions />
   </head>
   <body
-    class="flex flex-col flex-wrap justify-between md:pt-8 md:pr-16 md:pb-8 md:pl-16 p-8 max-w-full min-h-screen max-h-screen relative dark:bg-[rgb(34,33,37)] dark:text-[rgb(245,245,245)]"
+    class="flex flex-col flex-wrap justify-center max-w-full min-h-screen max-h-screen overflow-hidden relative dark:bg-[rgb(34,33,37)] dark:text-[rgb(245,245,245)]"
   >
     <Header is404Page={is404Page}/>
+    <div class="wrapper w-full h-auto">
     <slot />
+    </div>
     <div class="shadow-vignette w-screen h-screen z-10 pointer-events-none absolute inset-0 bg-green-800/30"/>
+    <!-- <div class="large-heart w-screen h-screen z-[12] absolute inset-0 bg-black/50" /> -->
     <Footer />
   </body>
 </html>

@@ -3,21 +3,24 @@ title: Ring
 slug: ring
 pubDate: 2018-12-25T16:00:00.000Z
 updatedDate: 2021-08-17T05:09:58.000Z
-tags: ['jewellery']
+tags: ["jewelry"]
 author: "Ria"
-image: { src: https://picsum.photos/800/500, alt: Vintage Ring, positionx: 30%, positiony: 20%}
+image:
+  {
+    src: https://cdn.uplovevintage.co.uk/jewelry.003.jpg,
+    alt: Vintage Ring,
+    positionx: 30%,
+    positiony: 20%,
+  }
 description: I met Adam in an paradoxically opposed situation when compared to this project that he ended up in - a contrast of bits and bytes vs. the physical medium. This paradox is also characteristic of the place that the photos were taken at - fond yet also melancholic memories of where he grew up.
 ---
 
 I met Adam in an paradoxically opposed situation when compared to this project that he ended up in - a contrast of bits and bytes vs. the physical medium. This paradox is also characteristic of the place that the photos were taken at - fond yet also melancholic memories of where he grew up.
 
 ---
-import MasonryLayout from '../../components/Masonry.astro';
-import image1 from '../../images/gallery/image.002.jpeg';
-import image2 from '../../images/gallery/image.003.jpeg';
+
+import MasonryLayout from "../../components/Masonry.astro";
 
 <MasonryLayout images={[
-      { src: image1, alt: "Ring 1" },
-    { src: image2, alt: "Ring 2" },
-
+      { src: 'https://cdn.uplovevintage.co.uk/jewelry.003.jpg', alt: "Ring 1" },
 ]} />

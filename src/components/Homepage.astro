@@ -6,17 +6,17 @@ const { title, images, alt, urls, width, height } = Astro.props;
 <BaseLayout title={title} is404Page={false}>
   <div
     id="homepage"
-    class="flex justify-center items-center -z-0"
+    class="flex justify-center items-center w-full gap-36 p-16"
     data-images={images}
     data-alt={alt}
     data-urls={urls}
     data-width={width}
     data-height={height}
   >
-    <a class="absolute inset-0 z-0  ">
+    <a class="absolute inset-0 z-0">
       <img
         id="randomHomePageImage"
-        class="hidden w-screen h-auto object-contain object-center"
+        class="hidden w-screen h-auto min-h-full object-cover object-center"
       />
     </a>
     <slot />
