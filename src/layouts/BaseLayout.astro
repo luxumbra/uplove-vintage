@@ -8,6 +8,7 @@ import '@fontsource-variable/baloo-2';
 import '@fontsource/birthstone-bounce';
 import '@fontsource/bona-nova';
 import { getImage } from 'astro:assets';
+import Icon from "astro-icon";
 
 let baseUrl = new URL(Astro.request.url).origin;
 const metaImage = await getImage({
@@ -39,7 +40,7 @@ const { image, description, author, pubDate, updatedDate, title, site_name, alt,
   Astro.props;
 ---
 
-<html class="bg-[rgb(245,245,245)] dark:bg-[rgb(34,33,37)]" lang="en">
+<html class="bg-[rgb(245,245,245)] dark:bg-[rgb(34,33,37)] dark" lang="en">
   <head>
     <meta charset="utf-8" />
     <!-- <link rel="icon" type="image/webp" href={favicon_webp.src} /> -->
@@ -82,8 +83,10 @@ const { image, description, author, pubDate, updatedDate, title, site_name, alt,
     <div class="wrapper w-full h-auto">
     <slot />
     </div>
-    <div class="shadow-vignette w-screen h-screen z-10 pointer-events-none absolute inset-0 bg-green-800/30"/>
-    <!-- <div class="large-heart w-screen h-screen z-[12] absolute inset-0 bg-black/50" /> -->
+    <div class="shadow-vignette w-screen h-screen z-10 pointer-events-none absolute inset-0 bg-green-600/30 dark:bg-green-800/30"/>
+    <div class="large-heart w-screen h-screen z-[9] absolute inset-0 bg-white/30 dark:bg-black/30 mix-blend-overlay">
+      <Icon name="logo-heart-large" class="w-5/6 -translate-y-28" />
+    </div>
     <Footer />
   </body>
 </html>
