@@ -1,0 +1,9 @@
+{
+  "sites": [
+    {
+      "slug": "big-market-noisy",
+      "distDir": "dist",
+      "buildCommand": "pnpm install && pnpm build"
+    }
+  ]
+}
