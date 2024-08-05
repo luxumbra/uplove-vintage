@@ -3,8 +3,8 @@ const today = new Date();
 import { Icon } from "astro-icon";
 ---
 
-<footer class="fixed bottom-0 left-0 top-auto flex flex-wrap md:flex-nowrap justify-between items-center align-center font-baloo-2 w-full h-20 md:h-12 z-20 p-8" >
-  <div class="text-[12px] text-justify items-center flex justify-center">
+<footer class="fixed bottom-0 left-0 top-auto flex flex-wrap md:flex-nowrap justify-between items-center align-center font-baloo-2 w-full h-20 md:h-12 p-2 md:p-8 z-30 bg-black/50 backdrop-blur-lg" >
+  <div class="text-xs md:text-sm text-justify items-center flex justify-center">
     &copy; {today.getFullYear()} Uplove Vintage. All rights reserved.
   </div>
   <div class="flex justify-center gap-3 m-2 sm:m-0">
@@ -20,7 +20,7 @@ import { Icon } from "astro-icon";
       <span class="sr-only">Follow Uplove Vintage on Instragram</span>
       <Icon name="mdi:instagram" class="h-[20px] w-[20px]" />
     </a>
-    <a href="https://foresite.rocks" target="_blank" class="text-sm">
+    <a href="https://foresite.rocks" target="_blank" class="text-xs md:text-sm">
       <span>Website by Fores<span class="text-cyan-500">i</span>te<span class="text-green-500">.</span></span>
       <!-- <Icon name="hugeicons:web-design-02" class="h-[20px] w-[20px]" /> -->
     </a>
