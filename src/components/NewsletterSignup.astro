@@ -2,26 +2,202 @@
 
 ---
 
-<div class="newsletter-signup bg-white/5 backdrop-blur-2xl z-30 rounded-3xl w-full md:w-5/6">
-  <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 md:px-6">
-      <div class="mx-auto max-w-screen-md sm:text-center">
-          <h2 class="mb-4 text-xl font-bona-nova mix-blend-overlay  tracking-tight font-extrabold text-gray-900 md:text-4xl dark:text-white">Sign up for our newsletter</h2>
-          <p class="mx-auto mb-8 max-w-2xl font-light text-gray-500 md:mb-12 sm:text-xl dark:text-gray-300">Join the Uplove Vintage Community! Subscribe for exclusive updates and get a 15% discount on your first order. Be the first to know about our latest vintage finds and special promotions!</p>
-          <form action="#">
-              <div class="items-center mx-auto mb-3 space-y-4 max-w-screen-sm sm:flex sm:space-y-0">
-                  <div class="relative w-full">
-                      <label for="email" class="hidden mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Email address</label>
-                      <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
-                          <svg class="w-5 h-5 text-gray-500 dark:text-gray-600" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg>
-                      </div>
-                      <input class="block p-3 pl-10 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 sm:rounded-none sm:rounded-l-lg focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-200 dark:border-gray-700 dark:placeholder-gray-400 dark:text-gray-600 dark:focus:ring-primary-500 dark:focus:border-primary-500 mix-blend-overlay" placeholder="Enter your email" type="email" id="email" required="">
-                  </div>
-                  <div>
-                      <button type="submit" class="py-3 px-5 w-full text-sm font-medium text-center text-white rounded-lg border cursor-pointer bg-primary-700 border-primary-600 sm:rounded-none sm:rounded-r-lg hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Subscribe</button>
-                  </div>
-              </div>
-              <div class="mx-auto max-w-screen-sm text-sm text-left text-gray-500 newsletter-form-footer dark:text-gray-300">We care about the protection of your data. <a href="#" class="font-medium text-primary-600 dark:text-primary-500 hover:underline">Read our Privacy Policy</a>.</div>
-          </form>
+<div
+  id="sf3z91d0ab63baa265781eff308f222bb48fa871e3bd01a2a64c7db00b" data-type="
+  signupform"
+  class="newsletter-signup bg-white/5 backdrop-blur-2xl z-30 rounded-3xl w-full md:w-5/6"
+>
+  <div
+    id="customForm"
+    class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 md:px-6"
+  >
+    <div class="mx-auto max-w-screen-md sm:text-center SIGNUP_BODY">
+      <h2
+        class="mb-4 text-xl font-bona-nova mix-blend-overlay tracking-tight font-extrabold text-gray-900 md:text-4xl dark:text-white"
+        id="SIGNUP_HEADING"
+      >
+        Sign up for our newsletter
+      </h2>
+      <p
+        class="mx-auto mb-8 max-w-2xl font-light text-gray-500 md:mb-12 sm:text-xl dark:text-gray-300"
+      >
+        Join the Uplove Vintage Community! Subscribe for exclusive updates and
+        get a 15% discount on your first order. Be the first to know about our
+        latest vintage finds and special promotions!
+      </p>
+
+      <div
+        id="Zc_SignupSuccess"
+        style="display:none;position:absolute;margin-left:4%;width:90%;background-color: white; padding: 3px; border: 3px solid rgb(194, 225, 154);  margin-top: 10px;margin-bottom:10px;word-break:break-all"
+      >
+        <table width="100%" cellpadding="0" cellspacing="0" border="0">
+          <tbody>
+            <tr>
+              <td class="w-[10%]">
+                <img
+                  class="successicon"
+                  src="https://zcv2-zcmp.maillist-manage.eu/images/challangeiconenable.jpg"
+                />
+              </td>
+              <td>
+                <span
+                  id="signupSuccessMsg"
+                  style="color: rgb(73, 140, 132); font-family: sans-serif; font-size: 14px;word-break:break-word"
+                  >&nbsp;&nbsp;Thank you for Signing Up</span
+                >
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
+      <form
+        method="POST"
+        id="zcampaignOptinForm"
+        action="https://zcv2-zcmp.maillist-manage.eu/weboptin.zc"
+        target="_zcSignup"
+      >
+        <div
+          class="items-center mx-auto mb-3 space-y-4 max-w-screen-sm sm:flex sm:space-y-0"
+        >
+          <div
+            style="background-color: rgb(255, 235, 232); padding: 10px; color: rgb(210, 0, 0); font-size: 11px; margin: 20px 10px 0px; border: 1px solid rgb(255, 217, 211); opacity: 1; display: none"
+            id="errorMsgDiv"
+          >
+            Please correct the marked field(s) below.
+          </div>
+          <div class="relative w-full SIGNUP_FLD">
+            <label
+              for="email"
+              class="hidden mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+              >Email address</label
+            >
+            <div
+              class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none"
+            >
+              <svg
+                class="w-5 h-5 text-gray-500 dark:text-gray-600"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+                ><path
+                  d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"
+                ></path><path
+                  d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"
+                ></path></svg
+              >
+            </div>
+            <input
+              class="block p-3 pl-10 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 sm:rounded-none sm:rounded-l-lg focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-200 dark:border-gray-700 dark:placeholder-gray-400 dark:text-gray-600 dark:focus:ring-primary-500 dark:focus:border-primary-500 mix-blend-overlay"
+              placeholder="Enter your email"
+              type="email"
+              changeitem="SIGNUP_FORM_FIELD"
+              name="CONTACT_EMAIL"
+              id="EMBED_FORM_EMAIL_LABEL"
+              required=""
+            />
+          </div>
+          <div class="SIGNUP_FLD">
+            <button
+              type="submit"
+              class="py-3 px-5 w-full text-sm font-medium text-center text-white rounded-lg border cursor-pointer bg-primary-700 border-primary-600 sm:rounded-none sm:rounded-r-lg hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+              name="SIGNUP_SUBMIT_BUTTON"
+              id="zcWebOptin">Subscribe</button
+            >
+          </div>
+        </div>
+        <div
+          class="mx-auto max-w-screen-sm text-sm text-left text-gray-500 newsletter-form-footer dark:text-gray-300"
+        >
+          We care about the protection of your data. <a
+            href="#"
+            class="font-medium text-primary-600 dark:text-primary-500 hover:underline"
+            >Read our Privacy Policy</a
+          >.
+        </div>
+        <input type="hidden" id="fieldBorder" value="" />
+        <input
+          type="hidden"
+          id="submitType"
+          name="submitType"
+          value="optinCustomView"
+        />
+        <input type="hidden" id="emailReportId" name="emailReportId" value="" />
+        <input type="hidden" id="formType" name="formType" value="QuickForm" />
+        <input type="hidden" name="zx" id="cmpZuid" value="14ae11ee2b" />
+        <input type="hidden" name="zcvers" value="2.0" />
+        <input
+          type="hidden"
+          name="oldListIds"
+          id="allCheckedListIds"
+          value=""
+        />
+        <input type="hidden" id="mode" name="mode" value="OptinCreateView" />
+        <input type="hidden" id="zcld" name="zcld" value="" />
+        <input type="hidden" id="zctd" name="zctd" value="12b86aca1773f159" />
+        <input type="hidden" id="document_domain" value="" />
+        <input type="hidden" id="zc_Url" value="zcv2-zcmp.maillist-manage.eu" />
+        <input type="hidden" id="new_optin_response_in" value="0" />
+        <input type="hidden" id="duplicate_optin_response_in" value="0" />
+        <input
+          type="hidden"
+          name="zc_trackCode"
+          id="zc_trackCode"
+          value="ZCFORMVIEW"
+        />
+        <input
+          type="hidden"
+          id="zc_formIx"
+          name="zc_formIx"
+          value="3z91d0ab63baa265781eff308f222bb48fa871e3bd01a2a64c7db00b67243e6938"
+        />
+        <input type="hidden" id="viewFrom" value="URL_ACTION" />
+        <span style="display: none" id="dt_CONTACT_EMAIL"
+          >1,true,6,Contact Email,2</span
+        >
+      </form>
+    </div>
   </div>
+  <img
+    src="https://zcv2-zcmp.maillist-manage.eu/images/spacer.gif"
+    id="refImage"
+    onload="referenceSetter(this)"
+    style="display:none;"
+  />
 </div>
+<input type="hidden" id="signupFormType" value="QuickForm_Horizontal" />
+<div
+  id="zcOptinOverLay"
+  oncontextmenu="return false"  function runOnFormSubmit_sf3z91d0ab63baa265781eff308f222bb48fa871e3bd01a2a64c7db00b67243e6938(
+    th
+  ) {
+    /*Before submit, if you want to trigger your event, "include your code here"*/
+  }
+</script>
+
+<!-- <style>
+  .quick_form_31_css * {
+    -webkit-box-sizing: border-box !important;
+    -moz-box-sizing: border-box !important;
+    box-sizing: border-box !important;
+    overflow-wrap: break-word;
+  }
+  input[type="text"]::placeholder {
+    color: rgb(165, 165, 165);
+  }
+  @media only screen and (max-width: 600px) {
+    .quick_form_31_css[name="SIGNUP_BODY"] {
+      width: 100% !important;
+      min-width: 100% !important;
+      margin: 0px auto !important;
+      padding: 0px !important;
+    }
+    .SIGNUP_FLD {
+      width: 90% !important;
+      margin: 10px 5% !important;
+      padding: 0px !important;
+    }
+    .SIGNUP_FLD input {
+      margin: 0 !important;
+    }
+  }
+</style> -->
