@@ -91,10 +91,10 @@ const {
     <ViewTransitions />
   </head>
   <body
-    class="flex flex-col flex-wrap items-center justify-center max-w-full min-h-screen lg:max-h-screen lg:overflow-hidden relative dark:bg-[rgb(34,33,37)] dark:text-[rgb(245,245,245)]"
+    class="flex flex-col flex-wrap items-center justify-start lg:justify-center max-w-full min-h-full relative dark:bg-[rgb(34,33,37)] dark:text-[rgb(245,245,245)]"
   >
     <Header is404Page={is404Page} />
-    <div class="wrapper w-full md:max-w-screen-md lg:max-w-lg h-auto">
+    <div class="wrapper w-full md:max-w-screen-md lg:max-w-[1750px] p-2 md:px-5 py-32 md:pt-28 md:pb-8 md:p-0 lg:pt-16 md:min-h-[calc(100vh-2rem)] lg:flex lg:items-center lg:justify-center">
       <slot />
     </div>
     <div

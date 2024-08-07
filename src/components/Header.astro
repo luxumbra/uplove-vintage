@@ -19,16 +19,16 @@ const favicon_avif = await getImage({
 });
 ---
 
-<header class="z-50 p-8 w-full fixed inset-0 bottom-auto">
+<header class="z-50 px-2 md:px-5 w-full flex fixed inset-0 bottom-auto h-5 md:h-16 backdrop-blur-md bg-white/5 shadow-lg shadow-black/5">
   <nav
     class="flex items-center justify-between w-full h-full relative align-center"
   >
     {
       !is404Page && (
-        <div>
+        <div class="">
           <a href="/">
             <img
-              class="favicon absolute left-0 -mt-[15px]"
+              class="favicon w-11 md:w-14"
               src={logoImg.src}
               alt="Home"
               width="88"
