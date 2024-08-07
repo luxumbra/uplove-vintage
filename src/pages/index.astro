@@ -5,7 +5,7 @@ const { pageTitle } = Astro.props;
 import { getCollection } from "astro:content";
 const collections = ["jewelry"];
 import { getImage, Image } from "astro:assets"; // Add all your collections here
-import logoImg from "../images/logo-white.svg";
+// import logoImg from "../images/logo-white.svg";
 
 let allImages = [];
 let allAlts = [];
@@ -40,7 +40,17 @@ for (let collection of collections) {
   allImages.push(...results.map((result) => result.imageSrc));
   allAlts.push(...results.map((result) => result.alt));
   allUrls.push(...results.map((result) => result.url));
+
 }
+const logoWhite = await getImage({
+src: "https://uplovevintage.b-cdn.net/logo-white.svg",
+alt: "favicon",
+// inferSize: true,
+width: "600",
+height: "600",
+decoding: "async",
+format: "avif"
+});
 ---
 
 {
@@ -80,9 +90,11 @@ for (let collection of collections) {
           Recycle. Upcycle. Relove. Uplove.
         </p>
         <Image
-          src={logoImg}
-          width={600}
+          src={logoWhite.src}
+          width={logoWhite.options.width}
+          height={logoWhite.options.height}
           alt="Logo"
+          loading="eager"
           class="h-auto mix-blend-overlay sm:max-w-80 md:max-w-[400px] lg:max-w-full opacity-55"
         />
         <p class="font-birthstone-bounce text-5xl sm:text-7xl md:text-[5rem] lg:text-[8rem] -rotate-12 opacity-55 lg:-mt-8 text-white">
