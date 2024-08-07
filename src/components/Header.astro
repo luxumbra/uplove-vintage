@@ -8,8 +8,8 @@ import logoImg from '../images/logo.png';
 
 const { is404Page = false } = Astro.props; // Get the prop from Astro.props
 
-const favicon_avif = await getImage({
-  src: "https://cdn.erfianugrah.com/ea_favicon.png",
+const logoImage = await getImage({
+  src: "https://cdn.uplovevintage.co.uk/cdn-favicon.png",
   alt: "favicon",
   // inferSize: true,
   width: "400",
@@ -27,12 +27,13 @@ const favicon_avif = await getImage({
       !is404Page && (
         <div class="">
           <a href="/">
-            <img
+            <Image
               class="favicon w-11 md:w-14"
-              src={logoImg.src}
+              src={logoImage.src}
               alt="Home"
               width="88"
               height="88"
+              loading="eager"
             />
           </a>
         </div>
