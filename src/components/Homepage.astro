@@ -25,3 +25,16 @@ const { title, images, alt, urls, width, height } = Astro.props;
   </div>
 </BaseLayout>
 <script src="../scripts/homePage.js"></script>
+
+<script>
+import JSConfetti from 'js-confetti'
+
+const jsConfetti = new JSConfetti()
+
+jsConfetti.addConfetti({
+  confettiRadius: 6,
+  confettiNumber: 200,
+  emojiSize: 10,
+  emojis: ['🐻', '🎉', '🎂', '✨', '💕', '🌸', '🥂', '😘']
+})
+</script>

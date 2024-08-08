@@ -5,6 +5,7 @@ const { pageTitle } = Astro.props;
 import { getCollection } from "astro:content";
 const collections = ["jewelry"];
 import { getImage, Image } from "astro:assets"; // Add all your collections here
+import Icon from "astro-icon";
 // import logoImg from "../images/logo-white.svg";
 
 let allImages = [];
@@ -101,8 +102,19 @@ format: "avif"
           Coming soon!!
         </p>
       </div>
+      <div id="birthday-message" class=" transition-opacity ease-in-out duration-1000 absolute inset-0 z-50 flex items-center justify-center backdrop-blur-2xl">
+        <div class="flex flex-col justify-center items-center gap-y-8">
+        <h2 class="font-birthstone-bounce text-7xl">Happy birthday my Little Bear!</h2>
+        <button type="button" class="text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-baloo-2 font-medium rounded-lg text-3xl px-5 py-2.5 text-center inline-flex justify-center items-center me-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 w-1/2">
+          <Icon name="noto:birthday-cake" class="w-20 h-auto" />
+          Click me to open!
+</button>
+      </div>
+      </div>
     </Homepage>
   ) : (
     <p>No images found!</p>
   )
 }
+
+<script src="../scripts/birthday.js" />

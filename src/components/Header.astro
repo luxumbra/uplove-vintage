@@ -5,6 +5,7 @@ import ThemeIcon from "./ThemeIcon.astro";
 import { getImage, Image } from "astro:assets";
 
 import logoImg from '../images/logo.png';
+import Icon from "astro-icon";
 
 const { is404Page = false } = Astro.props; // Get the prop from Astro.props
 
@@ -19,11 +20,11 @@ const logoImage = await getImage({
 });
 ---
 
-<header class="z-50 px-2 md:px-5 w-full flex items-center justify-center fixed inset-0 bottom-auto h-12 md:h-16 backdrop-blur-md bg-white/5 shadow-lg shadow-black/5">
+<header class="z-50 px-2 md:px-5 w-full flex items-center justify-center fixed inset-0 bottom-auto h-12 md:h-16">
   <nav
     class="flex items-center justify-between w-full h-full relative align-center  sm:max-w-screen-sm md:max-w-screen-md lg:max-w-[1750px]"
   >
-    {
+    <!-- {
       !is404Page && (
         <div class="">
           <a href="/">
@@ -38,7 +39,7 @@ const logoImage = await getImage({
           </a>
         </div>
       )
-    }
+    } -->
     <!-- {
       !is404Page && (
         <div class="absolute right-[55px] -mb-[5px]">
@@ -46,7 +47,7 @@ const logoImage = await getImage({
         </div>
       )
     } -->
-    {
+    <!-- {
       !is404Page && (
         <div class="-mt-[3px]">
           <Hamburger />
@@ -59,7 +60,15 @@ const logoImage = await getImage({
           <Navigation />
         </div>
       )
-    }
+    } -->
   </nav>
   <slot />
+  <div
+  class="large-heart w-full h-full z-0 inset-0 bg-white/10 dark:bg-black/5 mix-blend-overlay overflow-y-visible fixed pointer-events-none overflow-hidden"
+>
+  <Icon
+    name="header-bg"
+    class="hidden sm:block md:h-auto w-auto md:w-full opacity-5 drop-shadow-lg shadow-black backdrop-blur-xl"
+  />
+</div>
 </header>

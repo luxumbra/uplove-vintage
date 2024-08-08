@@ -9,6 +9,7 @@ import "@fontsource/birthstone-bounce";
 import "@fontsource/bona-nova";
 import { getImage } from "astro:assets";
 import Icon from "astro-icon";
+import PageCosmetics from "../components/PageCosmetics.astro";
 
 let baseUrl = new URL(Astro.request.url).origin;
 const metaImage = await getImage({
@@ -97,18 +98,7 @@ const {
     <div class="wrapper w-full sm:max-w-screen-sm md:max-w-screen-md lg:max-w-[1750px] px-4 md:px-5 py-32 md:pt-28 md:pb-8 md:p-0 lg:pt-16 md:min-h-[calc(100vh-2rem)] lg:flex lg:items-center lg:justify-center">
       <slot />
     </div>
-    <div
-      class="shadow-vignette w-screen h-full md:h-screen z-10 pointer-events-none fixed inset-0 bg-green-600/30 dark:bg-green-800/30"
-    >
-    </div>
-    <div
-      class="large-heart w-screen h-screen z-[9]  inset-0 bg-white/30 dark:bg-black/30 mix-blend-overlay overflow-y-visible fixed"
-    >
-      <Icon
-        name="logo-heart-large"
-        class="h-screen md:h-auto w-auto md:w-5/6 -translate-y-16 md:-translate-y-28"
-      />
-    </div>
+    <PageCosmetics />
     <Footer />
   </body>
 </html>

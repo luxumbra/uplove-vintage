@@ -1,4 +1,6 @@
 ---
+import Icon from "astro-icon";
+
 
 ---
 
@@ -31,9 +33,9 @@
       <p
         class="mx-auto mb-8 max-w-2xl font-light text-gray-500 lg:mb-12 sm:text-md lg:text-xl dark:text-gray-300"
       >
-        Join the Uplove Vintage Community! Subscribe for exclusive updates and
+        Join the Uplove Vintage Family! Subscribe for exclusive updates and
         get a 15% discount on your first order. Be the first to know about our
-        latest vintage finds and special promotions!
+        latest vintage finds, shows we're attending and regular special promotions!
       </p>
 
       <div
@@ -152,6 +154,14 @@
     onload="referenceSetter(this)"
     style="display:none;"
   />
+  <div
+  class="large-heart w-full h-full z-0 inset-0 bg-white/10 dark:bg-black/5 mix-blend-overlay overflow-y-visible fixed pointer-events-none overflow-hidden"
+>
+  <Icon
+    name="logo-heart-large"
+    class="h-full md:h-auto w-auto md:w-full opacity-20 drop-shadow-lg shadow-black"
+  />
+</div>
 </div>
 <input type="hidden" id="signupFormType" value="QuickForm_Horizontal" />
 <div
