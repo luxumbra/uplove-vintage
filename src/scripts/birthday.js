@@ -3,11 +3,15 @@ document.addEventListener('astro:page-load', () => {
   if (birthdayEl) {
     const button = birthdayEl.querySelector('button');
     button.addEventListener('click', () => {
-      if (birthdayEl.style.display === 'flex') {
-        birthdayEl.style.opacity = '1'
-      } else {
+      if (birthdayEl.classList.contains('flex')) {
         birthdayEl.style.opacity = '0'
+        setTimeout(() => {
+          birthdayEl.style.display = 'none';
+        }, 1000);
+      } else {
+        birthdayEl.style.opacity = '1'
       }
+
     })
   }
 })
