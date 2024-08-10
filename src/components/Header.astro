@@ -20,11 +20,11 @@ const logoImage = await getImage({
 });
 ---
 
-<header class="z-50 px-2 md:px-5 w-full flex items-center justify-center fixed inset-0 bottom-auto h-12 md:h-16">
-  <nav
+<header class="z-50 px-2 md:px-5 w-full flex items-center justify-center fixed inset-0 bottom-auto h-12 md:h-16 overflow-y-visible">
+  <!-- <nav
     class="flex items-center justify-between w-full h-full relative align-center  sm:max-w-screen-sm md:max-w-screen-md lg:max-w-[1750px]"
   >
-    <!-- {
+    {
       !is404Page && (
         <div class="">
           <a href="/">
@@ -39,15 +39,15 @@ const logoImage = await getImage({
           </a>
         </div>
       )
-    } -->
-    <!-- {
+    }
+    {
       !is404Page && (
         <div class="absolute right-[55px] -mb-[5px]">
           <ThemeIcon />
         </div>
       )
-    } -->
-    <!-- {
+    }
+    {
       !is404Page && (
         <div class="-mt-[3px]">
           <Hamburger />
@@ -60,15 +60,15 @@ const logoImage = await getImage({
           <Navigation />
         </div>
       )
-    } -->
-  </nav>
+    }
+  </nav> -->
   <slot />
   <div
-  class="large-heart w-full h-full z-0 inset-0 bg-white/10 dark:bg-black/5 mix-blend-overlay overflow-y-visible fixed pointer-events-none overflow-hidden"
+  class="large-heart w-full h-28 z-0 inset-0 bg-white/10 dark:bg-black/5 mix-blend-overlay overflow-y-visible absolute pointer-events-none"
 >
   <Icon
     name="header-bg"
-    class="hidden sm:block md:h-auto w-auto md:w-full opacity-5 drop-shadow-lg shadow-black backdrop-blur-xl"
+    class=" h-full w-auto sm:block md:h-auto md:w-full opacity-5 drop-shadow-lg shadow-black backdrop-blur-xl -translate-x-1/4 sm:translate-x-0"
   />
 </div>
 </header>
