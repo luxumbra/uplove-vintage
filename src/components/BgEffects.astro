@@ -10,6 +10,7 @@
     position: fixed;
     z-index: 1;
     overflow: hidden;
+    overflow-y: visible;
     mix-blend-mode: overlay;
   }
 
@@ -28,7 +29,7 @@
     animation-duration: $animationDuration;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-    $colors: (#ffffff90, #ffffff99, #ffffff88);
+    $colors: (#ffffff, #ffffffcc, #ffffffdd);
     @for $i from 1 through $amount {
         &:nth-child(#{$i}) {
         color: nth($colors, random(length($colors)));
