@@ -15,7 +15,7 @@ import BgEffects from "../components/BgEffects.astro";
 
 let baseUrl = new URL(Astro.request.url).origin;
 const metaImage = await getImage({
-  src: "https://cdn.uplovevintage.co.uk/jewelry.003.jpg",
+  src: "https://cdn.uplovevintage.co.uk/social.jpg",
   alt: "cover_image",
   // inferSize: true,
   width: "1280",
@@ -40,7 +40,7 @@ const pageTitle = "Uplove Vintage";
 const metaDescription =
   "Recycle. Upcycle. Relove. Uplove. is our ethos. Coming soon!";
 const {
-  image,
+  image = 'https://cdn.uplovevintage.co.uk/social.jpg',
   description,
   author,
   pubDate,
