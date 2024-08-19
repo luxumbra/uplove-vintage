@@ -15,7 +15,7 @@ import BgEffects from "../components/BgEffects.astro";
 
 let baseUrl = new URL(Astro.request.url).origin;
 const metaImage = await getImage({
-  src: "https://cdn.uplovevintage.co.uk/social.jpg",
+  src: "https://cdn.uplovevintage.co.uk/social.webp",
   alt: "cover_image",
   // inferSize: true,
   width: "1280",
@@ -40,7 +40,7 @@ const pageTitle = "Uplove Vintage | Sustainable Fashion, Upcycled Decor, & Timel
 const metaDescription =
   "Discover Uplove Vintage, your destination for sustainable fashion and decor. Shop our curated collection of meticulously restored and upcycled vintage items, each with its own unique story. Find timeless treasures that blend past charm with modern style.";
 const {
-  image = 'https://cdn.uplovevintage.co.uk/social.jpg',
+  image = 'https://cdn.uplovevintage.co.uk/social.webp',
   description,
   author,
   pubDate,
