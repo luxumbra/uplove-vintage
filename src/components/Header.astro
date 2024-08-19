@@ -7,7 +7,7 @@ import { getImage, Image } from "astro:assets";
 import logoImg from '../images/logo.png';
 import Icon from "astro-icon";
 
-const { is404Page = false } = Astro.props; // Get the prop from Astro.props
+const { is404Page = false, isHomepage = false } = Astro.props; // Get the prop from Astro.props
 
 const logoImage = await getImage({
   src: "https://cdn.uplovevintage.co.uk/cdn-favicon.png",
@@ -20,12 +20,12 @@ const logoImage = await getImage({
 });
 ---
 
-<header class="z-50 px-2 md:px-5 w-full flex items-center justify-center fixed inset-0 bottom-auto h-12 md:h-16 overflow-y-visible">
-  <!-- <nav
+<header class="z-50 px-2 md:px-5 w-full flex items-center justify-center fixed inset-0 bottom-auto h-12 md:h-16 overflow-y-visible bg-white/0">
+  <nav
     class="flex items-center justify-between w-full h-full relative align-center  sm:max-w-screen-sm md:max-w-screen-md lg:max-w-[1750px]"
   >
     {
-      !is404Page && (
+      (!is404Page && !isHomepage) && (
         <div class="">
           <a href="/">
             <Image
@@ -40,7 +40,7 @@ const logoImage = await getImage({
         </div>
       )
     }
-    {
+     <!-- {
       !is404Page && (
         <div class="absolute right-[55px] -mb-[5px]">
           <ThemeIcon />
@@ -60,15 +60,15 @@ const logoImage = await getImage({
           <Navigation />
         </div>
       )
-    }
-  </nav> -->
+    }-->
+  </nav>
   <slot />
   <div
-  class="large-heart w-full fixed h-28 z-0 inset-0 bg-white/10 dark:bg-black/5 mix-blend-overlay overflow-y-visible pointer-events-none"
+  class="large-heart w-full fixed h-28 z-0 inset-0 bg-white/0 dark:bg-black/0 mix-blend-overlay overflow-y-visible pointer-events-none"
 >
   <Icon
     name="header-bg"
-    class=" h-[100vh] absolutetop-0 w-auto sm:block md:h-auto md:w-full opacity-5 drop-shadow-lg shadow-black -translate-x-[7%] sm:translate-x-0"
+    class=" h-[100vh] absolutetop-0 w-auto sm:block md:h-auto md:w-full opacity-5 drop-shadow-lg shadow-black -translate-x-[7%] sm:translate-x-0 pointer-events-none"
   />
 </div>
 </header>

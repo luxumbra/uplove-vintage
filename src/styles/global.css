@@ -27,6 +27,10 @@ html.dark {
   flex-direction: column;
 } */
 
+body a {
+  transition: all 0.2s ease-in-out;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -38,12 +42,12 @@ h1 {
 
 @layer components {
   .large-heart {
-    @apply border-2;
+    /* @apply border-2; */
   }
 
   .nav-links {
     a {
-      @apply inline-flex items-center border-2;
+      /* @apply inline-flex items-center border-2; */
     }
   }
 }

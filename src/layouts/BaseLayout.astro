@@ -10,6 +10,8 @@ import "@fontsource/bona-nova";
 import { getImage } from "astro:assets";
 import Icon from "astro-icon";
 import PageCosmetics from "../components/PageCosmetics.astro";
+import '../styles/global.css';
+import BgEffects from "../components/BgEffects.astro";
 
 let baseUrl = new URL(Astro.request.url).origin;
 const metaImage = await getImage({
@@ -47,6 +49,7 @@ const {
   site_name,
   alt,
   is404Page = false,
+  isHomepage,
 } = Astro.props;
 ---
 
@@ -94,11 +97,12 @@ const {
   <body
     class="flex flex-col flex-wrap items-center justify-start lg:justify-center max-w-full min-h-full relative dark:bg-[rgb(34,33,37)] dark:text-[rgb(245,245,245)]"
   >
-    <Header is404Page={is404Page} />
-    <div class="wrapper w-full sm:max-w-screen-sm md:max-w-screen-md lg:max-w-[1750px] px-4 md:px-5 py-16 md:py-32 md:pt-28 md:pb-8 md:p-0 lg:pt-16 md:min-h-[calc(100vh-2rem)] lg:flex lg:items-center lg:justify-center">
+    <Header is404Page={is404Page} isHomepage={isHomepage} />
+    <div class="wrapper w-full sm:max-w-screen-sm md:max-w-screen-md lg:max-w-[1750px] px-4 md:px-5 py-16 md:py-32 md:p-0 lg:py-8 md:min-h-[calc(100vh-2rem)] lg:flex lg:items-center lg:justify-center">
       <slot />
     </div>
     <PageCosmetics />
+    <BgEffects />
     <Footer />
   </body>
 </html>
