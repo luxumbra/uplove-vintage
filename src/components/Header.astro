@@ -64,11 +64,11 @@ const logoImage = await getImage({
   </nav> -->
   <slot />
   <div
-  class="large-heart w-full h-28 z-0 inset-0 bg-white/10 dark:bg-black/5 mix-blend-overlay overflow-y-visible absolute pointer-events-none"
+  class="large-heart w-full fixed h-28 z-0 inset-0 bg-white/10 dark:bg-black/5 mix-blend-overlay overflow-y-visible pointer-events-none"
 >
   <Icon
     name="header-bg"
-    class=" h-full w-auto sm:block md:h-auto md:w-full opacity-5 drop-shadow-lg shadow-black backdrop-blur-xl -translate-x-1/4 sm:translate-x-0"
+    class=" h-[100vh] absolutetop-0 w-auto sm:block md:h-auto md:w-full opacity-5 drop-shadow-lg shadow-black -translate-x-[7%] sm:translate-x-0"
   />
 </div>
 </header>
