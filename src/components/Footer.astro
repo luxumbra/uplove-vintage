@@ -1,14 +1,16 @@
 ---
 const today = new Date();
 import { Icon } from "astro-icon";
+import FollowUs from "./FollowUs.astro";
 ---
 
-<footer class="relative md:relative lg:fixed bottom-0 left-0 top-auto flex flex-wrap sm:flex-nowrap justify-start sm:justify-between items-center align-center font-baloo-2 w-full h-20 md:h-8 p-2 sm:px-2 md:px-5 gap-4 sm:gap-0 z-30" >
+<footer class="relative md:relative lg:fixed bottom-0 left-0 top-auto flex flex-wrap sm:flex-nowrap justify-start sm:justify-between items-end align-center font-baloo-2 w-full h-20 md:h-24 p-2 sm:px-2 md:px-5 gap-4 sm:gap-0 z-30" >
   <div class="text-xs md:text-sm text-justify items-center flex justify-center">
     &copy; {today.getFullYear()} Uplove Vintage. All rights reserved.
   </div>
+  <FollowUs />
   <div class="flex justify-center gap-3 my-2 sm:m-0">
-    <a href="https://facebook.com/uplovevintage" target="_blank">
+    <!-- <a href="https://facebook.com/uplovevintage" target="_blank">
       <span class="sr-only">Follow Uplove on Facebook</span>
       <Icon name="mdi:facebook" class="h-[20px] w-[20px]" />
     </a>
@@ -19,12 +21,15 @@ import { Icon } from "astro-icon";
     <a href="https://www.instagram.com/uplovevintage/" target="_blank">
       <span class="sr-only">Follow Uplove Vintage on Instragram</span>
       <Icon name="mdi:instagram" class="h-[20px] w-[20px]" />
-    </a>
+    </a> -->
+    <p class="text-sm">Design by
     <a href="https://foresite.rocks" target="_blank" class="text-xs md:text-sm">
       <span><span class="font-semibold">Fores<span class="text-cyan-500">i</span>te<span class="text-green-500">.</span></span></span>
       <!-- <Icon name="hugeicons:web-design-02" class="h-[20px] w-[20px]" /> -->
     </a>
+    </p>
   </div>
   <slot />
+
 </footer>
 <script src="../scripts/rss.js"></script>

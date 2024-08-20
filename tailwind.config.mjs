@@ -23,7 +23,7 @@ export default {
 				'size-66': '100% 66.67%'
 			},
 			boxShadow: {
-				vignette: '0 0 300px 300px rgba(0 0 0 / 0.6) inset',
+				vignette: '0 0 300px 300px rgba(0 0 0 / 0.4) inset',
 			},
 			typography: {
 				'no-quotes': {
